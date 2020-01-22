@@ -1,11 +1,21 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenRA.Mods.Example", "OpenRA.Mods.Example\OpenRA.Mods.Example.csproj", "{4E5B38F7-4E99-4C92-BB39-9100CC7F3829}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Mods.Example", "OpenRA.Mods.Example\OpenRA.Mods.Example.csproj", "{4E5B38F7-4E99-4C92-BB39-9100CC7F3829}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenRA.Game", "engine\OpenRA.Game\OpenRA.Game.csproj", "{0DFB103F-2962-400F-8C6D-E2C28CCBA633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Game", "engine\OpenRA.Game\OpenRA.Game.csproj", "{0DFB103F-2962-400F-8C6D-E2C28CCBA633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenRA.Mods.Common", "engine\OpenRA.Mods.Common\OpenRA.Mods.Common.csproj", "{FE6C8CC0-2F07-442A-B29F-17617B3B7FC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Mods.Common", "engine\OpenRA.Mods.Common\OpenRA.Mods.Common.csproj", "{FE6C8CC0-2F07-442A-B29F-17617B3B7FC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wrapper", "Wrapper\Wrapper.csproj", "{7CA0E54A-C62E-4F0D-B2E4-D8F6966D07E7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0DFB103F-2962-400F-8C6D-E2C28CCBA633} = {0DFB103F-2962-400F-8C6D-E2C28CCBA633}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.Platforms.Default", "engine\OpenRA.Platforms.Default\OpenRA.Platforms.Default.csproj", "{812A4D83-84B0-429A-908A-DFF7D5C29357}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenRA.PostProcess", "engine\OpenRA.PostProcess\OpenRA.PostProcess.csproj", "{95D43436-B9BB-474A-8176-475000971206}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,5 +42,29 @@ Global
 		{FE6C8CC0-2F07-442A-B29F-17617B3B7FC6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE6C8CC0-2F07-442A-B29F-17617B3B7FC6}.Release-x86|Any CPU.ActiveCfg = Release|Any CPU
 		{FE6C8CC0-2F07-442A-B29F-17617B3B7FC6}.Release-x86|Any CPU.Build.0 = Release|Any CPU
+		{7CA0E54A-C62E-4F0D-B2E4-D8F6966D07E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CA0E54A-C62E-4F0D-B2E4-D8F6966D07E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CA0E54A-C62E-4F0D-B2E4-D8F6966D07E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CA0E54A-C62E-4F0D-B2E4-D8F6966D07E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CA0E54A-C62E-4F0D-B2E4-D8F6966D07E7}.Release-x86|Any CPU.ActiveCfg = Release|Any CPU
+		{7CA0E54A-C62E-4F0D-B2E4-D8F6966D07E7}.Release-x86|Any CPU.Build.0 = Release|Any CPU
+		{812A4D83-84B0-429A-908A-DFF7D5C29357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{812A4D83-84B0-429A-908A-DFF7D5C29357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{812A4D83-84B0-429A-908A-DFF7D5C29357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{812A4D83-84B0-429A-908A-DFF7D5C29357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{812A4D83-84B0-429A-908A-DFF7D5C29357}.Release-x86|Any CPU.ActiveCfg = Release|Any CPU
+		{812A4D83-84B0-429A-908A-DFF7D5C29357}.Release-x86|Any CPU.Build.0 = Release|Any CPU
+		{95D43436-B9BB-474A-8176-475000971206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95D43436-B9BB-474A-8176-475000971206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95D43436-B9BB-474A-8176-475000971206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95D43436-B9BB-474A-8176-475000971206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95D43436-B9BB-474A-8176-475000971206}.Release-x86|Any CPU.ActiveCfg = Release-x86|Any CPU
+		{95D43436-B9BB-474A-8176-475000971206}.Release-x86|Any CPU.Build.0 = Release-x86|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5AFDF2F0-3291-4BBA-9B53-06B0C3FE9BEB}
 	EndGlobalSection
 EndGlobal
